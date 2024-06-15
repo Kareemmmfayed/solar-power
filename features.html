@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features Box</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header style="height: 120px" class="position-relative">
+      <div
+        class="position-absolute"
+        style="
+          width: 100%;
+          height: 5px;
+          z-index: 1;
+          transition: width 0.8s ease;
+          background-color: #8b071f;
+        "
+        id="line"
+      ></div>
+      <div class="h-100 d-flex">
+        <div
+          class="col-5 h-100 d-flex justify-content-center align-items-end pl-4"
+          style="background-color: #8b071f"
+        >
+          <nav style="margin-left: 100px" class="mb-1">
+            <ul class="d-flex" style="list-style: none">
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-white text-xs fw-bold"
+                  style="text-decoration: none"
+                  >Enerphy Suisse</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-white text-xs fw-bold"
+                  style="text-decoration: none"
+                  >Customer Portal</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-white text-xs fw-bold"
+                  style="text-decoration: none"
+                >
+                  Marketplace
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="col-7 h-100 d-flex justify-content-center align-items-end pr-4"
+          style="background-color: #f4f4f4"
+        >
+          <form
+            class="position-absolute d-flex"
+            style="top: 10px; right: 250px; z-index: 1"
+          >
+            <div class="d-flex justify-content-center align-items-center mr-2">
+              <input type="text" placeholder="search..." style="width: 300px" />
+              <button type="submit" style="height: 24px; width: 24px">
+                <span></span>
+              </button>
+            </div>
+            <button style="background-color: #8b071f" id="toggleHeader">
+              X
+            </button>
+          </form>
+          <nav style="margin-right: 90px" class="mb-1">
+            <ul class="d-flex" style="list-style: none">
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-dark text-xs fw-bold"
+                  style="text-decoration: none"
+                  >Knowledge Center</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-dark text-xs fw-bold"
+                  style="text-decoration: none"
+                  >Downloads Hub</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-dark text-xs fw-bold"
+                  style="text-decoration: none"
+                  >News</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-dark text-xs fw-bold"
+                  style="text-decoration: none"
+                  >Media</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-dark text-xsfw-bold"
+                  style="text-decoration: none"
+                  >Careers</a
+                >
+              </li>
+              <li class="mr-4">
+                <a
+                  href=""
+                  class="text-dark text-xs fw-bold"
+                  style="text-decoration: none"
+                  >Intranet</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div
+        style="height: 125px; transition: top 1s; top: 5px"
+        class="bg-white w-100 position-absolute"
+        id="secondHeader"
+      >
+        <div
+          class="container py-2 d-border border-bottom border-4"
+          style="padding-block: 50px"
+        >
+          <a>
+            <img src="./logo.png" alt="logo" style="width: 200px" />
+          </a>
+        </div>
+        <div>
+          <nav>
+            <div class="container">
+              <ul class="d-flex" style="list-style: none">
+                <li class="mr-4 activeTap">
+                  <a
+                    href=""
+                    class="fw-bold"
+                    style="text-decoration: none; font-size: 24px"
+                    >Home</a
+                  >
+                </li>
+                <li class="mr-4">
+                  <a
+                    href=""
+                    class="text-dark fw-bold"
+                    style="text-decoration: none; font-size: 24px"
+                    >About</a
+                  >
+                </li>
+                <li class="mr-4">
+                  <a
+                    href=""
+                    class="text-dark fw-bold"
+                    style="text-decoration: none; font-size: 24px"
+                    >Services</a
+                  >
+                </li>
+                <li class="mr-4">
+                  <a
+                    href=""
+                    class="text-dark fw-bold"
+                    style="text-decoration: none; font-size: 24px"
+                    >Investment</a
+                  >
+                </li>
+                <li class="mr-4">
+                  <a
+                    href=""
+                    class="text-dark fw-bold"
+                    style="text-decoration: none; font-size: 24px"
+                    >Connect</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="landing vh-75">
+      <div
+        class="container d-flex justify-content-between align-items-start h-100"
+      >
+        <div class="left h-100 pt-4 w-auto">
+          <div class="text mb-5">
+            <h4>Enerphy Suisse,</h4>
+            <h1 class="fw-light" style="font-size: 100px">Convert</h1>
+            <h5>a property to be a solar power plant</h5>
+          </div>
+          <div style="margin-top: 100px">
+            <p>Ready To Turn Sun To Your Advantage!</p>
+            <p>
+              Some facts before untap your solar potential and protect against
+              outages.
+            </p>
+            <button class="bg-transparent p-2 px-4">Learn more</button>
+          </div>
+        </div>
+        <div
+          class="right h-100 w-85 d-flex justify-content-center align-items-center"
+          style="width: 800px"
+        >
+          <img src="./3d_building6b.png" alt="building" class="h-100 w-100" />
+        </div>
+      </div>
+    </div>
+
+    <div class="dig_features">
+      <div class="dig_features_bg"></div>
+      <div class="dig_features_content">
+        <div class="dig_featureBox">
+          <div class="dig_featureTitle">
+            <h2>Harness the Sun - Generate Solar Power for Your Needs</h2>
+          </div>
+          <div class="dig_featureCard" id="firstCard">
+            <div>
+              <img
+                src="https://enerphy-suisse.ch/frontend/assets/img1/cards/Card_1.png"
+                alt="Card_1"
+              />
+            </div>
+            <p>
+              Install solar panels to convert sunlight into electricity for your
+              home. Customize your solar energy system to meet your household's
+              unique power requirements.
+            </p>
+          </div>
+        </div>
+        <div class="dig_featureBox">
+          <div class="dig_featureTitle">
+            <h2>Recharge with Solar - Refuel Your Life with Clean Energy</h2>
+          </div>
+          <div class="dig_featureCard" id="secondCard">
+            <div>
+              <img
+                src="https://enerphy-suisse.ch/frontend/assets/img1/cards/Card_2.png"
+                alt="Card_2"
+              />
+            </div>
+            <p>
+              Go green and slash your energy bills by installing solar panels.
+              Reduce your carbon footprint with clean, renewable power straight
+              from the sun.
+            </p>
+          </div>
+        </div>
+        <div class="dig_featureBox">
+          <div class="dig_featureTitle">
+            <h2>Solar Storage Solutions - Store Sunshine for Rainy Days</h2>
+          </div>
+          <div class="dig_featureCard" id="thirdCard">
+            <div>
+              <img
+                src="https://enerphy-suisse.ch/frontend/assets/img1/cards/Card_3.png"
+                alt="Card_3"
+              />
+            </div>
+            <p>
+              Solar batteries let you bank surplus solar energy for later use.
+              Stay powered on even when the sun isn't shining with our
+              integrated storage solutions.
+            </p>
+          </div>
+        </div>
+        <div class="dig_featureBox">
+          <div class="dig_featureTitle">
+            <h2>
+              Solar Thermal Systems - Heat Your Home with Free Energy from the
+              Sun
+            </h2>
+          </div>
+          <div class="dig_featureCard" id="fourthCard">
+            <div>
+              <img
+                src="https://enerphy-suisse.ch/frontend/assets/img1/cards/Card_4.png"
+                alt="Card_4"
+              />
+            </div>
+            <p>
+              Reduce heating bills by harnessing the sun's thermal energy. Solar
+              water heating systems provide free hot water from renewable solar
+              power.
+            </p>
+          </div>
+        </div>
+        <div class="dig_featureBox">
+          <div class="dig_featureTitle">
+            <h2>
+              Intelligent Solar Management - Distribute and Optimize Your Solar
+              Supply
+            </h2>
+          </div>
+          <div class="dig_featureCard" id="fifthCard">
+            <div>
+              <img
+                src="https://enerphy-suisse.ch/frontend/assets/img1/cards/Card_5.png"
+                alt="Card_5"
+              />
+            </div>
+            <p>
+              Smart tech ensures you get the most from your solar energy system.
+              Built-in sensors monitor and distribute your solar supply for
+              maximum efficiency.
+            </p>
+          </div>
+        </div>
+        <div class="dig_featureBox">
+          <div class="dig_featureTitle">
+            <h2>Go Off-Grid with Solar - Achieve Energy Independence</h2>
+          </div>
+          <div class="dig_featureCard" id="sixthCard">
+            <div>
+              <img
+                src="https://enerphy-suisse.ch/frontend/assets/img1/cards/Card_6.png"
+                alt="Card_6"
+              />
+            </div>
+            <p>
+              Cut the cord to the electric grid with an off-grid solar system.
+              Achieve true energy independence with solar panels, batteries and
+              smart controls.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 450px"
+    >
+      <div
+        class="border-left border-danger border-4 p-4"
+        style="width: 80%; height: 260px"
+      >
+        <p>Get informed!</p>
+        <h2>Our Workflow: Every step counts</h2>
+        <p class="fs-1 mb-4 mt-4">
+          Our team of experienced professionals is here to help you every step
+          of the way, from initial consultation to installation and beyond. We
+          will work with you to understand your unique energy needs and design a
+          customized solar solution that fits your budget and lifestyle.
+        </p>
+        <button class="bg-transparent p-2 px-4">Discover More</button>
+      </div>
+    </div>
+
+    <div class="steps container d-flex justify-content-center">
+      <ol class="list-unstyled">
+        <li class="step_item">
+          <div>
+            <div class="d-flex">
+              <div>
+                <h2>Suitability Check</h2>
+                <p>
+                  Discover your maximum theoretical solar potential
+                  free-of-charge
+                </p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img
+                  src="./online_check_suitability3.svg"
+                  alt="suitability"
+                  class="h-100 w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex flex-row-reverse">
+              <div>
+                <h2>On-site Inspection</h2>
+                <p>Advisory with a custom design for your needs</p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img src="./meeting.svg" alt="meeting" class="h-100 w-100" />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex">
+              <div>
+                <h2>Design Approval</h2>
+                <p>Your approval for the final 3D layout of your system</p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img
+                  src="./solar_planning.svg"
+                  alt="solar"
+                  class="h-100 w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex flex-row-reverse">
+              <div>
+                <h2>Permitting/Funding Application</h2>
+                <p>
+                  We submit a funding application for subsidize,and your city
+                  issues a building permit
+                </p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img
+                  src="./checkhands.svg"
+                  alt="shack-hands"
+                  class="h-100 w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex">
+              <div>
+                <h2>System Installation</h2>
+                <p>
+                  Upon permit approval, we call to schedule your installation
+                </p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img
+                  src="./solar_installation1.svg"
+                  alt="solar"
+                  class="h-100 w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex flex-row-reverse">
+              <div>
+                <h2>Inspection</h2>
+                <p>
+                  The city sends a building inspector to your home to check our
+                  work
+                </p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img
+                  src="./solar_installation2.svg"
+                  alt="solar_2"
+                  class="h-100 w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex">
+              <div>
+                <h2>Net Metering</h2>
+                <p>Your utility company installs the net meter at your home</p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img
+                  src="./solar_maintenance.svg"
+                  alt="solar_maintenance"
+                  class="h-100 w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step_item">
+          <div>
+            <div class="d-flex flex-row-reverse">
+              <div>
+                <h2>Energization</h2>
+                <p>Start power your needs with Solar</p>
+              </div>
+              <div
+                style="height: 174px; width: 174px; background-color: #f4f6d5"
+                class="rounded-circle p-2"
+              >
+                <img src="./solar_IoT2.svg" alt="solar" class="h-100 w-100" />
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 450px"
+    >
+      <div
+        class="border-left border-danger border-4 p-4"
+        style="width: 80%; height: 260px"
+      >
+        <p>Your home might need a new roof!</p>
+        <h2>Solar Wins: Boost Savings with Subsidies!</h2>
+        <p class="fs-1 mb-4 mt-4">
+          Find out for free how much your solar roof will cost and how much
+          solar power it will produce. Enerphy Suisse tiles have been made to
+          last thanks to their Swiss design and precise handcrafting to the
+          highest industry standards.
+        </p>
+        <button class="bg-transparent p-2 px-4">Customer Porter</button>
+      </div>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 450px"
+    >
+      <div
+        class="p-4 d-flex justify-content-center align-items-center p-relative"
+        style="width: 80%; height: 400px"
+      >
+        <img src="./knowledgecenter.jpg" alt="bulb" class="h-100 w-100" />
+        <h2
+          class="position-absolute top-50 start-50 translate-middle"
+          style="font-size: 76px"
+        >
+          Calculators
+        </h2>
+      </div>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 450px"
+    >
+      <div
+        class="d-flex border-left border-danger border-4 p-4"
+        style="width: 80%; height: 300px"
+      >
+        <div class="w-60">
+          <p>Tobias Kawelowski - Your Contact Person</p>
+          <h2>
+            Do you have questions about the photovoltaic system (PV system) for
+            your premises?
+          </h2>
+          <p class="fs-1 mb-4 mt-4">
+            Contact me if you have questions about your (potential) photovoltaic
+            system, about funding & amortization, or just generally about solar
+            power for your private, commercial, or industrial roof.
+          </p>
+          <button class="bg-transparent p-2 px-4 mr-4">Send e-mail</button>
+          <button class="bg-transparent p-2 px-4">011111111111</button>
+        </div>
+        <img src="./tobias.kawelowskic.png" alt="" class="w-40" />
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
