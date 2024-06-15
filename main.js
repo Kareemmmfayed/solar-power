@@ -152,4 +152,5 @@ myButton.addEventListener("click", (e) => {
   e.preventDefault();
   myDiv.classList.toggle("closed");
   line.classList.toggle("headerChanged");
+  myButton.classList.toggle("toggleClicked");
 });
