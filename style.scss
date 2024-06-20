@@ -326,3 +326,27 @@ footer {
   height: 30px;
   width: 100%;
 }
+
+.cards {
+  background-color: #f2f1eb;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 50%;
+  }
+
+  .card {
+    text-align: center;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

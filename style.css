@@ -321,4 +321,24 @@ footer {
   align-items: center;
   height: 30px;
   width: 100%;
+}
+
+.cards {
+  background-color: #f2f1eb;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.cards img {
+  height: 50%;
+}
+.cards .card {
+  text-align: center;
+}
+.cards .card h2 {
+  font-size: 22px;
+}
+.cards .card p {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
